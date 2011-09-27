@@ -1,4 +1,4 @@
-ShowMe (now)
+![ShowMe (now)](https://github.com/johannesboyne/ShowMe.js/raw/master/smJSlogo.png)
 ============
 
 ## ShowMe.js
