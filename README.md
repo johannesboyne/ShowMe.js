@@ -16,3 +16,5 @@ And it supports HTML-Templating:
 ```javascript
 ShowMe.now("<code>+49</code> (0)251 222 555<i>-753</i>");
 ```
+## ShowMe.js in action:
+![ShowMe.js in Action](https://github.com/johannesboyne/ShowMe.js/raw/master/inaction.png)
