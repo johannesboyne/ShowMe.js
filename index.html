@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ShowMe: A Javascript bit for showing numbers and strings nicely.</title>
+		<meta content="" name="description">
+		<style>
+			body {
+				background: #CCC;
+				color: #FFF;
+				font-family: 'Helvetica Neue Light', 'Helvetica', 'Arial', sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			body a {
+				text-decoration: none;
+				color: #333;
+			}
+			.wrapper {
+				margin: 0px auto;
+				width: 960px;
+				clear: both;
+			}
+			.header {
+				width: 100%;
+				height: 120px;
+				background: #efefef;
+			}
+			.logo {
+				background: url('smJSlogo.png');
+				width: 500px;
+				height: 100px;
+				float: left;
+			}
+			.logo span {
+				display: none;
+			}
+			.downloads {
+				color: #333;
+				position: relative;
+			}
+			.downloads ul {
+				position: absolute;
+				top: 30px;
+				left: 550px;
+				list-style: none;
+			}
+			.downloads ul li {
+				float: left;
+				padding-right: 30px;
+			}
+			.downloads a {
+				text-decoration: none;
+				color: #333;
+			}
+			.sampleCode {
+				width: 100%;
+				padding: 10px;
+				background: #111;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- HTML -->
+		<div class='header'>
+			<div class='wrapper'>
+				<div class='logo'><span>ShowMe.js</span></div>
+				<div class='downloads'>
+					<ul>
+						<li><a href='showme.js'>Development Version</a></li>
+						<li><a href='showme.min.js'>Production Version</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='wrapper'>
+			<div class='description'>
+				<p>ShowMe.js is a little JavaScript util for showing Apple-Addressbook like "Large Type" notifications.</p>
+			</div>
+			<div class='sampleCode'>
+				<code>
+					ShowMe.now('+49 (0)251 222 555');
+				</code>
+			</div>
+			<div class='examples'>
+				<ul>
+					<li><a href='#' onclick='javascript: ShowMe.now("+49 (0)251 222 555");'>+49 (0)251 222 555</a></li>
+					<li><a href='#' onclick='javascript: ShowMe.now("showme@js.com");'>showme@js.com</a></li>
+					<li><a href='#' onclick='javascript: ShowMe.now("http://jobo.github.com/showme/");'>http://jobo.github.com/showme/</a></li>
+				</ul>
+			</div>
+			<div class='sampleCode'>
+				<code>
+					ShowMe.now('&lt;code&gt;+49&lt;/code&gt; (0)251 222 555&lt;i&gt;-753&lt;/i&gt;');
+				</code>
+			</div>
+			<div class='examples'>
+				<ul>
+					<li><a href='#' onclick='javascript: ShowMe.now("<code>+49</code> (0)251 222 555<i>-753</i>");'>+49 (0)251 222 555-753</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- JavaScripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="showme.min.js"></script>
+	</body>
+</html>
